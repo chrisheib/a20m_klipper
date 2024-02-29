@@ -52,3 +52,15 @@ origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
 managed_services = klipper
 primary_branch = main
 
+[spoolman]
+server = http://raspi.local:7912
+
+[update_manager klipper-mpc]
+type = git_repo
+channel = dev
+path = ~/klipper-mpc
+origin = https://github.com/Luro02/klipper-mpc.git
+managed_services = klipper
+primary_branch = master
+install_script = install.sh
+
